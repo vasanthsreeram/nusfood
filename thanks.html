@@ -1,0 +1,111 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        :root {
+            --star-size: 40px;
+            --star-color: #d4d4d4;
+            --star-background: #ff9f1a;
+            --bg-color: #363537;
+            /* Dark background color */
+            --text-color: #ffffff;
+            /* Light text color */
+            --input-bg-color: #495057;
+            /* Dark input field background */
+            --input-text-color: #ffffff;
+            /* Light input field text color */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .form-control,
+        .form-control:focus {
+            background-color: var(--input-bg-color);
+            color: var(--input-text-color);
+            border-color: var(--input-bg-color);
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+        }
+
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .star-rating input[type=radio] {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: var(--star-size);
+            color: var(--star-color);
+            cursor: pointer;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover~label,
+        .star-rating input[type=radio]:checked~label {
+            color: var(--star-background);
+        }
+
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary:focus {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Nice enjoy your food</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- <form name="ok" id="rating" class="mb-3">
+                    <div class="star-rating mb-3">
+                        <input type="radio" id="5-stars" name="rating" value="5" /><label for="5-stars"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="4-stars" name="rating" value="4" /><label for="4-stars"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="3-stars" name="rating" value="3" /><label for="3-stars"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="2-stars" name="rating" value="2" /><label for="2-stars"
+                            class="fas fa-star"></label>
+                        <input type="radio" id="1-star" name="rating" value="1" /><label for="1-star"
+                            class="fas fa-star"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                    <button type="submit"   class="btn btn-primary">Submit</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WSD69YHCF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9WSD69YHCF');
+</script>
+
+</html>
